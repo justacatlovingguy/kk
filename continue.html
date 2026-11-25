@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Continue an Investigation | Croizier.AI</title>
+<link rel="stylesheet" href="./style.css"><script defer src="./vendor/qr.js"></script><script defer src="./continuation.js"></script></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="./">CROIZIER<span>.AI</span></a><nav aria-label="Main"><a href="./#projects">Projects</a><a href="./lab.html">Claim Review Lab</a><a href="./submit.html">Submit a Claim</a><a href="./continue.html">Continue an Investigation</a><a href="./media.html">Media &amp; Stories</a><a href="./backlog.html">Backlog</a></nav></header>
+<main id="main">
+<section class="prose"><p class="eyebrow">MESSAGE IN A BOTTLE</p>
+<h1 class="release-title">Continue an investigation</h1>
+<p>Try a fictional library-hours case. The share link and QR reopen the same sample step on another device. This public demo uses prepared evidence and follow-ups.</p>
+<noscript><p>Enable JavaScript to run the demo.</p></noscript>
+</section>
+<div class="media-grid">
+<section class="panel" aria-labelledby="case-title"><h2 id="case-title">Is the library open on Monday?</h2>
+<p>The usual schedule says yes. Monday is also a holiday. Which source should you use?</p>
+<button id="process" type="button">Process sample message</button>
+<div id="result" hidden>
+<p><strong>Reviewed answer:</strong> The fictional Harbour Library is closed Monday, November 30.</p>
+<details id="regular-hours"><summary>Source A · Regular hours</summary><blockquote>Monday: 10 a.m. to 6 p.m.</blockquote><p>Standing hours, published November 1.</p></details>
+<details id="holiday-notice"><summary>Source B · Holiday closure notice</summary><blockquote>Harbour Library will be closed Monday, November 30. Regular hours resume Tuesday.</blockquote><p>Exception notice, published November 23.</p></details>
+<p>The dated closure notice applies to this specific Monday. Check for a newer notice before traveling.</p>
+<h3>Choose a follow-up</h3>
+<div class="demo-actions"><button data-step="sources" type="button">Why did the newer notice win?</button>
+<button data-step="next" type="button">What would change the answer?</button></div>
+<p id="follow-up" aria-live="polite"></p>
+</div></section>
+<section class="panel" id="sharing" hidden aria-labelledby="share-title">
+<h2 id="share-title">Take this step with you</h2>
+<label for="resume-link">Public demo link</label>
+<input id="resume-link" type="url" readonly>
+<div class="demo-actions"><button id="copy-link" type="button">Copy link</button>
+<button id="show-qr" type="button" aria-controls="qr-area" aria-expanded="false">Show QR</button></div>
+<p id="share-status" role="status"></p>
+<div id="qr-area" hidden><canvas id="qr" role="img" aria-label="QR code for the public demo link"></canvas></div>
+<p class="muted">When testing on two devices, use the deployed GitHub Pages address or another web address both devices can reach.</p>
+</section></div>
+<section class="prose"><h2>Private investigations</h2>
+<p>The proposed live service would save a reviewed investigation to a user’s account, require sign-in, and issue revocable continuation links. This demo sends no question text and stores no private session data.</p>
+<a href="./architecture.html#continuation">See the continuation design</a></section>
+</main>
+<footer><span>Croizier.AI V1.6</span><a href="./#projects">Explore all projects</a></footer></body></html>

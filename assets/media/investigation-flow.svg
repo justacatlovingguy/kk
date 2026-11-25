@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+<title id="title">Croizier.AI investigation continuation</title>
+<desc id="desc">A question enters by web, app or QR. Evidence review creates an answer. A continuation link reopens the investigation. Account sign-in for private cases is planned.</desc>
+<rect width="760" height="420" fill="#102222"/>
+<g fill="#173031" stroke="#78a095" stroke-width="2">
+<rect x="34" y="58" width="326" height="104" rx="12"/>
+<rect x="400" y="58" width="326" height="104" rx="12"/>
+<rect x="400" y="215" width="326" height="104" rx="12"/>
+<rect x="34" y="215" width="326" height="104" rx="12"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="24" font-weight="bold" fill="#edf3e6">
+<text x="54" y="102">1. Ask a question</text><text x="420" y="102">2. Check the evidence</text>
+<text x="420" y="259">3. Take the answer</text><text x="54" y="259">4. Continue later</text>
+</g>
+<g font-family="system-ui,sans-serif" font-size="17" fill="#c4d6cc">
+<text x="54" y="130">Website, app or QR entry</text><text x="420" y="130">Sources, uncertainty, next check</text>
+<text x="420" y="287">Copy link or scan QR</text><text x="54" y="287">Reopen the same investigation</text>
+<text x="34" y="374">Planned for private cases: sign-in, ownership check and revocable access.</text>
+</g>
+<path d="M369 110h22m-7-7 7 7-7 7M563 172v32m-7-7 7 7 7-7M391 267h-22m7-7-7 7 7 7" fill="none" stroke="#e0ec95" stroke-width="3"/>
+</svg>

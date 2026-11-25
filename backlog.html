@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project Backlog | Croizier.AI</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./submission-config.js"></script>
+<script defer src="./backlog-data.js"></script>
+<script defer src="./backlog.js"></script>
+<script defer src="./submit.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="./">CROIZIER<span>.AI</span></a><nav aria-label="Main"><a href="./#projects">Projects</a><a href="./lab.html">Claim Review Lab</a><a href="./submit.html">Submit a Claim</a><a href="./continue.html">Continue an Investigation</a><a href="./media.html">Media &amp; Stories</a><a href="./backlog.html">Backlog</a></nav></header>
+
+<main id="main"><section class="hero portfolio-hero">
+<p class="eyebrow">CROIZIER.AI</p>
+<h1>Project backlog</h1>
+<p>See what’s open for exploration and tell Steve which project you’d like to help with.</p>
+<a class="cta" href="#backlog-projects">Browse the backlog</a>
+</section>
+<section id="backlog-projects" aria-labelledby="backlog-title">
+<h2 id="backlog-title">Ideas for collaboration</h2>
+<div id="backlog-list" class="project-grid"></div>
+<noscript><p>Enable JavaScript to see the backlog and interest form.</p></noscript>
+</section>
+<section id="collaborate" class="prose" aria-labelledby="collaborate-title">
+<h2 id="collaborate-title">Express interest</h2>
+<p id="submission-status" role="status">The collaboration inbox is currently unavailable.</p>
+<form id="submission" class="panel submission" method="post" hidden aria-describedby="collaboration-privacy">
+<p id="collaboration-privacy">Formspree delivers your note privately. Include only contact details you want to share with Steve.</p>
+<input type="hidden" name="request_type" value="backlog_collaboration">
+<label for="backlog-project">Project</label>
+<select id="backlog-project" name="project" required></select>
+<label for="contact-name">Name (optional)</label>
+<input id="contact-name" name="name" autocomplete="name" maxlength="100">
+<label for="contact-email">Email for a reply (optional)</label>
+<input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254">
+<label for="interest">How would you like to contribute?</label>
+<textarea id="interest" name="interest" rows="5" maxlength="2000" required></textarea>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+<button class="cta" type="submit" disabled>Send interest</button>
+</form>
+</section></main>
+<footer><span>Croizier.AI V1.6</span><a href="./#projects">Explore all projects</a></footer>
+
+</body>
+</html>

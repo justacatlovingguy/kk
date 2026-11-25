@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Architecture | Croizier.AI</title><link rel="stylesheet" href="./style.css">
+</head><body>
+<header><a class="brand" href="./">CROIZIER<span>.AI</span></a><nav aria-label="Main"><a href="./#projects">Projects</a><a href="./lab.html">Claim Review Lab</a><a href="./submit.html">Submit a Claim</a><a href="./continue.html">Continue an Investigation</a><a href="./media.html">Media &amp; Stories</a><a href="./backlog.html">Backlog</a></nav></header>
+<main><article class="prose">
+<p class="eyebrow">ARCHITECTURE V1.5</p><h1 style="font-size:clamp(3rem,8vw,6rem)">Claim review</h1>
+<p>V1.5 adds a private submission route for new cases. The lab displays published, human-reviewed cases. The same curated case powers Review mode and the Save Our AI Society vote-and-reveal exercise.</p>
+<h2>Market patterns</h2>
+<ul>
+<li>Claim navigation and flags draw on <a href="https://www.typeahead.ai/tools/hallucination-detector">Typeahead</a> and <a href="https://getsolved.ai/hallucination-detector">GetSolved</a>.</li>
+<li>Question context and scope draw on <a href="https://howtoai.com/ai-hallucination-checker/">HowToAI</a>.</li>
+<li>Source existence and claim support are tracked separately, following patterns in <a href="https://www.textsight.ai/what-is-an-ai-hallucination-detector/">TextSight</a> and <a href="https://support.gptzero.me/articles/7953436668-what-are-ai-hallucinations-and-fact-check">GPTZero</a>.</li>
+<li><a href="https://www.olostep.com/hallucination-detector">Olostep</a> provides a comparator for three-way verdicts with sources.</li>
+</ul>
+<h2>Evidence policy</h2>
+<p><strong>Yes</strong> means evidence supports the exact claim. <strong>No</strong> means evidence contradicts it. <strong>Maybe</strong> means the evidence is incomplete or conflicting and the case specifies a next check.</p>
+<h2>Run a Society session</h2>
+<p>Choose Society mode, vote independently, then compare the vendor passages. Discuss why the Typeahead quota claim is contradicted and what would resolve GetSolved’s free full-document allowance. Turn a confirmed error into a review rule and retest it on a new claim.</p>
+<h2>From submission to register</h2>
+<p>Visitors can paste an AI answer and identify a claim to check. A reviewer checks the sources and publishes selected cases after removing identifying details and reviewing publication permission. Submissions do not appear automatically.</p>
+<h2>Release scope</h2>
+<p>The browser renders versioned cases with human-reviewed outcomes. Votes stay in page memory. Live extraction, web retrieval, and document uploads are candidates for V2.0.</p>
+<section id="continuation"><h2>Investigation continuation</h2>
+<p>A website, app or QR entry can open the same intake. When a visitor opts in, the proposed live service would save the original question, reviewed answer, sources and open points under an investigation ID.</p>
+<p>A text, email or QR code would lead to that investigation after sign-in and an ownership check. Revocable links can expire independently of the saved investigation. Follow-ups attach to the same case, with a new revision when evidence changes the answer.</p>
+<p>The v1.6 public demo encodes only the current fictional sample step in its URL.</p>
+<p><a href="./assets/media/investigation-flow.svg">Open the architecture drawing</a> · <a href="./continue.html">Try the demo</a></p>
+</section></article></main><footer><span>Croizier.AI V1.6</span><a href="./lab.html#lab">Open the review lab</a></footer>
+</body></html>

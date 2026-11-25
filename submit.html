@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Submit a Claim | Croizier.AI</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./submission-config.js"></script>
+<script defer src="./submit.js"></script>
+</head>
+<body>
+<header><a class="brand" href="./">CROIZIER<span>.AI</span></a><nav aria-label="Main"><a href="./#projects">Projects</a><a href="./lab.html">Claim Review Lab</a><a href="./submit.html">Submit a Claim</a><a href="./continue.html">Continue an Investigation</a><a href="./media.html">Media &amp; Stories</a><a href="./backlog.html">Backlog</a></nav></header>
+<main>
+<section class="prose" aria-labelledby="submit-title">
+<p class="eyebrow">SAVE OUR AI SOCIETY</p>
+<h1 class="page-title" id="submit-title">Submit a Claim</h1>
+<p>Put a message in the bottle. Paste an AI answer and point out what you’d like checked. A reviewer may add an approved, de-identified case to the Truth Register.</p>
+<p id="submission-status" role="status">Submissions are currently unavailable.</p>
+<form id="submission" class="panel submission" method="post" hidden aria-describedby="submission-privacy">
+<p id="submission-privacy">Formspree delivers submissions to the private review inbox. Remove names, private records, passwords, and other confidential information before sending.</p>
+<label for="answer">AI output <span class="muted">(required)</span></label>
+<textarea id="answer" name="ai_output" rows="7" maxlength="5000" required></textarea>
+<label for="claim">Specific claim to check <span class="muted">(required)</span></label>
+<textarea id="claim" name="claim_to_check" rows="3" maxlength="1000" required></textarea>
+<label for="prompt">Original prompt <span class="muted">(optional)</span></label>
+<textarea id="prompt" name="original_prompt" rows="3" maxlength="2000"></textarea>
+<label for="sources">Source links <span class="muted">(optional)</span></label>
+<textarea id="sources" name="source_links" rows="2" maxlength="1500" placeholder="One URL per line"></textarea>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+<label class="checkbox"><input type="checkbox" name="redaction_confirmed" value="yes" required> I’ve removed personal and confidential information.</label>
+<label class="checkbox"><input type="checkbox" name="publication_permission" value="yes"> You may publish a de-identified excerpt if it’s approved for the Truth Register.</label>
+<button class="cta" type="submit" disabled>Send for review</button>
+</form>
+</section>
+</main>
+<footer><span>Croizier.AI V1.6</span><a href="./lab.html#lab">Open the Truth Register</a></footer>
+</body>
+</html>

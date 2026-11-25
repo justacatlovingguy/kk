@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Review AI claims and evidence with the Save Our AI Society.">
+<title>Croizier.AI | Save Our AI Society</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./cases.js"></script>
+<script defer src="./review-card.js"></script>
+<script defer src="./app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="./">CROIZIER<span>.AI</span></a><nav aria-label="Main"><a href="./#projects">Projects</a><a href="./lab.html">Claim Review Lab</a><a href="./submit.html">Submit a Claim</a><a href="./continue.html">Continue an Investigation</a><a href="./media.html">Media &amp; Stories</a><a href="./backlog.html">Backlog</a></nav></header>
+<main>
+<section class="hero bottle-hero" aria-labelledby="bottle-title">
+<div>
+<p class="eyebrow">SAVE OUR AI SOCIETY</p>
+<h1 id="bottle-title">Message in<br>a bottle.</h1>
+<p>Send an AI claim for review. Then open the evidence and make up your own mind.</p>
+<a class="cta" href="#lab" id="open-bottle">Open a sample bottle ↓</a>
+<a class="cta secondary" href="./submit.html">Send a claim</a>
+</div>
+<img src="./assets/message-in-a-bottle.webp" alt="An open green glass bottle with a rolled message emerging from its neck." width="1200" height="800">
+</section>
+<ol class="bottle-steps" aria-label="How a review works">
+<li><strong>Send a message</strong><p>Put the AI answer, the claim, and any original question into the submission form.</p></li>
+<li><strong>Mercury carries it</strong><p>Mercury represents the handoff. A reviewer picks up the message privately and uses the Croizier review workflow to check the evidence.</p></li>
+<li><strong>Open the bottle</strong><p>Make your own Yes, No, or Maybe call, then see the reviewed finding and what could change it. Share the Review Card with the evidence attached.</p></li>
+</ol>
+<section id="lab" aria-labelledby="case-title">
+<div class="section-head">
+<div><p class="eyebrow">TRUTH REGISTER</p><label id="case-picker" hidden>Case <select id="case-select"></select></label><h2 id="case-title"></h2><p id="case-context"></p><p class="muted">Curated evidence · Reviewed <time id="review-date"></time></p></div>
+<fieldset class="modes"><legend>Mode</legend><label><input type="radio" name="mode" value="review" checked> Review</label><label><input type="radio" name="mode" value="society"> Society</label></fieldset>
+</div>
+<noscript><p>Enable JavaScript to use the claim review lab.</p></noscript>
+<div class="workspace">
+<div class="panel"><h3>AI answer excerpt</h3><p class="muted">Select a highlighted claim to see its reviewed evidence.</p><div id="excerpt"></div>
+<h3>Claims</h3><label for="filter">Filter by type</label><select id="filter"></select><p id="summary" aria-live="polite"></p><div id="claims"></div></div>
+<div class="panel" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="prose"><h2>Pick up where you left off</h2><p><a href="./continue.html">Try the linked investigation demo</a> and take a sample follow-up to another device.</p></section></main>
+<footer><span>Croizier.AI V1.6</span><a href="./architecture.html">Architecture and review method</a></footer>
+</body>
+</html>
